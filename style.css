@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(195, 131, 232);
+}
+
+#place {
+    background-color: rgb(175, 90, 224);
+    width: 75px;
+    height: 150px;
+}

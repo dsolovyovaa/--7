@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Lab 7</title>
+</head>
+
+<body>
+    <nav>
+        <h3 class="taskTitle">ЗАВДАННЯ 5</h3>
+    </nav>
+    <main>
+        <div id="place">
+
+        </div>
+    </main>
+    <script>
+        window.addEventListener('click', function (event) {
+            const clickedPlace = document.getElementById('place');
+            if (event.target === clickedPlace) {
+                console.log(true);
+            } else {
+                console.log(false);
+            }
+        });
+
+    </script>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

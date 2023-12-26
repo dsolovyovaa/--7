@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Lab 7</title>
+</head>
+
+<body>
+    <nav>
+        <h3>ЗАВДАННЯ 3</h3>
+    </nav>
+    <main>
+        <div style="display: inline-block;">
+            <button onclick="hideOrReveal()" id="button-3">Приховати</button>
+            <input type="text" id="password-input">
+        </div>
+    </main>
+    <script>
+        let passwordTemp = '';
+        function hideOrReveal() {
+            if (document.getElementById('button-3').innerHTML === 'Приховати') {
+                passwordTemp = document.getElementById('password-input').value;
+                document.getElementById('password-input').value = '';
+                for (let i = 0; i < passwordTemp.length; i++) {
+                    document.getElementById('password-input').value += '*';
+                }
+                document.getElementById('button-3').innerHTML = 'Розкрити';
+            } else {
+                document.getElementById('password-input').value = passwordTemp;
+                passwordTemp = '';
+                document.getElementById('button-3').innerHTML = 'Приховати';
+            }
+            count++;
+        }
+
+    </script>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
